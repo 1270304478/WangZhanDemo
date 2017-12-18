@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFB40E"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="6"
+        android:gravity="center" >
+
+        <RadioButton
+            android:id="@+id/but_baoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/radio_selector"
+            android:checked="true"
+            android:text="我报名的"
+            android:button="@null"
+            android:textColor="#FFB40F" />
+        <RadioButton
+            android:button="@null"
+            android:id="@+id/but_fabu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/radio_selector"
+            android:text="我发布的"
+            android:textColor="#FFB40F"/>
+    </RadioGroup>
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/aar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验票" />
+    </LinearLayout>
+</LinearLayout>
